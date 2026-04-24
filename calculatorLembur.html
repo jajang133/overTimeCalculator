@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Lembur</title>
+</head>
+<body class="container">
+    <header class="h1">  
+
+        <h1>
+          Kalkulator Lembur
+        </h1>
+    
+        <h3>
+         Perhitungan ini berdasarkan ketentuan yang berlaku pada PP No. 35 Tahun 2021
+        </h3>
+    
+    </header>
+
+    <nav class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="" class="active">Tool</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <article>
+        <label>Gaji Pokok</label> <br>
+        <input type="text" id="gaji" placeholder="Masukan Jumlah Gaji" oninput="formatRupiah(this)">
+
+        <br><br>
+
+        <label for="hariLembur">Hari Lembur</label> <br>
+        <select id="hariLembur">
+            <option value="hariKerja">Hari Kerja</option>
+            <option value="hariLibur">Hari Libur</option>
+        </select>
+
+        <br><br>
+
+        <label for="">Jumlah Jam Lembur</label> <br>
+        <input type="number" id="jamLembur">
+
+        <br><br>
+
+        <button id="tombolHitung" onclick="convert()">Hitung</button>
+
+        <h2 id="result"></h2>
+    </article>
+
+        <button class="music-button" onclick="musik()">
+        <i class="fa fa-music"></i>
+    </button>
+
+    <audio id="lagu" src="3 Minute Spring Timer with Relaxing LoFi Music 🌸.mp3" loop></audio>
+
+    <script src="scriptUjianArif.js"></script>
+    </body>
+</html>
+
